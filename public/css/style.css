@@ -18,6 +18,33 @@ body{
   background-color: rgb(11,29,39);
   letter-spacing: 2px;
 }
+.btn-scroll-top{
+  width: 40px;
+  height: 40px;
+  color: black;
+  background-color: rgb(226, 226, 226);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 12px 2px rgba(255, 255, 255, .5);
+
+  transition: all ease .3s;
+  opacity: 0;
+  pointer-events: none;
+}
+.btn-scroll-top:hover{
+  transform: scale(1.1);
+}
+.btn-scroll-top.active{
+  opacity: 1;
+  pointer-events: auto;
+}
 
 .main-header{
   height: 110vh;
@@ -129,7 +156,7 @@ a{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
 }
 .main-header .main-header-nav-2 .main-header-nav-2-title .title-slogan::before{
   content: "";
@@ -597,6 +624,14 @@ footer .footer-column-2 ul a:first-child{
   main .section .column-2{
     min-width: 100%;
   }
+  .main-header .main-header-nav-2 .main-header-nav-2-title .title-slogan{
+    text-shadow: 1px 1px 10px rgba(0,0,0);
+  }
+  .main-header .main-header-nav-2 .main-header-nav-2-title .title-slogan::before, 
+  .main-header .main-header-nav-2 .main-header-nav-2-title .title-slogan::after{
+    text-shadow: 1px 1px 10px rgba(0,0,0);
+  }
+  
 }
 
 @media (max-width: 399px){
