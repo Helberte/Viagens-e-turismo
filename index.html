@@ -9,6 +9,7 @@
   <meta name="keywords" content="Viagens, turismo, passeio, diversão, transportes">
 
   <link rel="stylesheet" href="public/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Icones -->
   <script src="https://kit.fontawesome.com/c8b8b3d409.js" crossorigin="anonymous"></script>
@@ -48,7 +49,7 @@
       <div class="main-header-nav-2-title">
         <p class="title-slogan">Conheça lugares incríveis!</p>
 
-        <h1>Viajar é a única coisa que você compra e te deixa mais rico!</h1>
+        <h1 data-aos="fade-up-right">Viajar é a única coisa que você compra e te deixa mais rico!</h1>
 
         <p class="title-veja-locais"><a href="#"> Veja os locais <i class="fa-solid fa-arrow-down"></i></a></p>
       </div>
@@ -66,9 +67,9 @@
     <section id="section-1" class="section-1 section">
       <div class="column-1 column">
 
-        <p class="numero">01</p>
+        <p data-aos="fade-down-right" class="numero">01</p>
 
-        <article class="article-description">
+        <article data-aos="fade-up" class="article-description">
           <p class="article-description-name">Nome do local onde é</p>
           <h2>Lorem ipsum dolor sit amet, consectetur</h2>
           <p class="article-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos voluptates, ea aliquam maiores provident maxime non aperiam, adipisci voluptate enim exercitationem sunt earum consequuntur tempore accusantium? Tenetur, iusto sunt!ium? Tenetur, iusto sunt!ium? Tenetur, iusto sunt!</p>
@@ -77,16 +78,16 @@
         </article>
 
       </div>
-      <div class="column-2 column">
+      <div data-aos="fade-left" class="column-2 column">
         <img src="public/img/img-1.jpg" alt="Nome do local">
       </div>
     </section>
 
     <section id="section-2" class="section-2 section">
       <div class="column-1 column">
-        <p class="numero">02</p>
+        <p data-aos="fade-down-left" class="numero">02</p>
 
-        <article class="article-description">
+        <article data-aos="fade-up" class="article-description">
           <p class="article-description-name">Nome do local onde é</p>
           <h2>Lorem ipsum dolor sit amet, consectetur</h2>
           <p class="article-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos voluptates, ea aliquam maiores provident maxime non aperiam, adipisci voluptate enim exercitationem sunt earum consequuntur tempore accusantium? Tenetur, iusto sunt!ium? Tenetur, iusto sunt!ium? Tenetur, iusto sunt!</p>
@@ -95,7 +96,7 @@
         </article>
 
       </div>
-      <div class="column-2 column">        
+      <div data-aos="fade-right" class="column-2 column">        
 
         <img src="public/img/img-2.jpg" alt="Nome do local">
       </div>      
@@ -103,9 +104,9 @@
 
     <section id="section-3" class="section-3 section">
       <div class="column-1 column">
-        <p class="numero">03</p>
+        <p data-aos="fade-down-right" class="numero">03</p>
 
-        <article class="article-description">
+        <article data-aos="fade-up" class="article-description">
           <p class="article-description-name">Nome do local onde é</p>
           <h2>Lorem ipsum dolor sit amet, consectetur</h2>
           <p class="article-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos voluptates, ea aliquam maiores provident maxime non aperiam, adipisci voluptate enim exercitationem sunt earum consequuntur tempore accusantium? Tenetur, iusto sunt!ium? Tenetur, iusto sunt!ium? Tenetur, iusto sunt!</p>
@@ -114,7 +115,7 @@
         </article>
 
       </div>
-      <div class="column-2 column">
+      <div data-aos="fade-left" class="column-2 column">
         <img src="public/img/img-3.jpg" alt="Nome do local">
       </div>
     </section>
@@ -151,5 +152,13 @@
   </footer>
 
   <script type="text/javascript" src="public/js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 10,
+      offset: 150,
+      duration: 450
+    });
+  </script>
 </body>
 </html>
