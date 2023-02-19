@@ -358,6 +358,7 @@ footer .footer-column-1 .footer-description{
   font-size: .8rem;
   width: 20rem;
   font-family: 'Roboto', sans-serif;
+  text-align: justify;
 }
 footer .footer-column-1 .footer-right{
   margin-top: 80px;
